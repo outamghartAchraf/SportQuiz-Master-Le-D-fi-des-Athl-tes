@@ -14,11 +14,12 @@ const QuizActions = ({
       <Button
         type="button"
         onClick={onFifty}
+        //di
         disabled={!canUseHint}
         className={`w-full py-4 lg:py-5 rounded-2xl font-extrabold text-base lg:text-xl tracking-wide  
           ${
             canUseHint
-              ? "bg-indigo-51 text-indigo-700 hover:bg-indigo-100 "
+              ? "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 "
               : "bg-gray-100 text-gray-400 "
           }`}
       >
