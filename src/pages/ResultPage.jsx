@@ -17,7 +17,7 @@ const ResultPage = ({ theme, onToggleTheme }) => {
     return null;
   }
 
-  const { score, totalQuestions, answers } = quizData;
+  const { score, totalQuestions, answers } = quizData
   const wrongCount = totalQuestions - score;
 
   return (

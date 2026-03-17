@@ -115,10 +115,10 @@ useEffect(() => {
     navigate("/results", {
       state: {
         quizData: {
-          scoree,
-          totalQuestionss,
-          answerss: answersLog,
-          percentages: Math.round((score / totalQuestions) * 100),
+          score,
+          totalQuestions,
+          answers: answersLog,
+          percentage: Math.round((score / totalQuestions) * 100),
         },
       },
       replace: true,
