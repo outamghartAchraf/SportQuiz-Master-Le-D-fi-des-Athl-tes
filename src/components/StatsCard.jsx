@@ -1,4 +1,3 @@
-import React from "react";
 
 const StatsCard = ({ label, count, color, icon }) => (
   <div className={`flex-1 flex items-center gap-4 border-2 border-${color}-200 bg-${color}-50 rounded-2xl px-6 py-5`}>
