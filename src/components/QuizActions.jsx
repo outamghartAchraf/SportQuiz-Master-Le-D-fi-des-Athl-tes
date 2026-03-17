@@ -1,20 +1,14 @@
 import React from "react";
 import Button from "./Button";
 
-const QuizActions = ({
-  canUseHint,
-  onFifty,
-  onNext,
-  isLocked,
-  isLastQuestion,
-}) => {
+const QuizActions = ({ canUseHint, onFifty, onNext, isLocked, isLastQuestion }) => {
   return (
     <div className="mt-auto grid gap-3 lg:grid-cols-[1fr_2fr] pt-4">
 
       <Button
         type="button"
         onClick={onFifty}
-        //di
+        
         disabled={!canUseHint}
         className={`w-full py-4 lg:py-5 rounded-2xl font-extrabold text-base lg:text-xl tracking-wide  
           ${

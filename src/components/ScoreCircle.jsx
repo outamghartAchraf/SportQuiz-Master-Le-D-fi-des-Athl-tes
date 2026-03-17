@@ -8,9 +8,9 @@ const ScoreCircle = ({ score, total }) => (
       <span className="text-gray-400 font-black text-base lg:text-xl">/{total}</span>
     </div>
     <h2 className="font-black text-gray-800 dark:text-white text-2xl lg:text-4xl mb-1">
-      Félicitations! <i className="fa-solid fa-trophy text-yellow-500" />
+      Félicitations <i className="fa-solid fa-trophy text-yellow-500" />
     </h2>
-    <p className="text-gray-400 font-semibold text-sm lg:text-lg">Excellent résultat, continue comme ça</p>
+    <p className="text-gray-400 font-semibold text-sm lg:text-lg"></p>
   </div>
 );
 

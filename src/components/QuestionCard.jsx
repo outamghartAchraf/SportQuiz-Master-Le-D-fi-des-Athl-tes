@@ -2,31 +2,32 @@ import React from "react";
 import Button from "./Button";
 
 const letters = ["a", "b", "c", "d"];
-const badgeColors = ["bg-yellow-400", "bg-green-400", "bg-violet-500", "bg-green-300"];
+const badgeColors = [
+  "bg-yellow-400",
+  "bg-green-400",
+  "bg-violet-500",
+  "bg-green-300",
+];
 
-const QuestionCard = ({
-  questionText,
-  options,
-  onSelect,
-  isLocked,
-  correctAnswer,
-  selectedAnswer,
-}) => {
+const QuestionCard = ({ questionText,  options, onSelect, isLocked, correctAnswer,  selectedAnswer,}) => {
   const rowClass = (opt) => {
-    const base =
-      "flex items-center gap-3 lg:gap-5 rounded-2xl px-4 py-3.5 lg:py-5 w-full text-left bg-gray-100";
+    const base = "flex items-center gap-3 lg:gap-5 rounded-2xl px-4 py-3.5 lg:py-5 w-full text-left bg-gray-100";
     if (!isLocked) return base;
 
-    if (opt === correctAnswer) return `${base} ring-2 ring-emerald-400 bg-emerald-100`;
-    if (selectedAnswer === opt && opt !== correctAnswer) return `${base} ring-2 ring-rose-400 bg-rose-100`;
+    if (opt === correctAnswer)
+      return `${base} ring-2 ring-emerald-400 bg-emerald-100`;
+    if (selectedAnswer === opt && opt !== correctAnswer)
+      return `${base} ring-2 ring-rose-400 bg-rose-100`;
 
     return `${base} opacity-60`;
   };
 
   const textClass = (opt) => {
     if (!isLocked) return "font-bold text-gray-700 text-base lg:text-xl";
-    if (opt === correctAnswer) return "font-extrabold text-emerald-700 text-base lg:text-xl";
-    if (selectedAnswer === opt && opt !== correctAnswer) return "font-extrabold text-rose-700 text-base lg:text-xl";
+    if (opt === correctAnswer)
+      return "font-extrabold text-emerald-700 text-base lg:text-xl";
+    if (selectedAnswer === opt && opt !== correctAnswer)
+      return "font-extrabold text-rose-700 text-base lg:text-xl";
     return "font-bold text-gray-500 text-base lg:text-xl";
   };
 
@@ -52,7 +53,7 @@ const QuestionCard = ({
                 badgeColors[idx % badgeColors.length]
               } flex items-center justify-center text-white font-extrabold text-xs lg:text-base flex-shrink-0`}
             >
-              {letters[idx] || "•"}
+              {letters[idx] || "."}
             </span>
             <span className={textClass(opt)}>{opt}</span>
           </Button>

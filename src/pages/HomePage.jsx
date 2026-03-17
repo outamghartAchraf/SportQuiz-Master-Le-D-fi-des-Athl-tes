@@ -32,7 +32,10 @@ const HomePage = ({ theme, onToggleTheme }) => {
       });
     } catch (err) {
       navigate("/error", {
-        state: { errorMessage: err?.message || "Erreur lors du chargement des questions." },
+        state: {
+          errorMessage:
+            err?.message || "Erreur lors du chargement des questions.",
+        },
         replace: true,
       });
     } finally {
@@ -40,7 +43,6 @@ const HomePage = ({ theme, onToggleTheme }) => {
     }
   };
 
-   
   if (loading) {
     return <Loader message="Chargement des questions..." />;
   }
@@ -57,11 +59,9 @@ const HomePage = ({ theme, onToggleTheme }) => {
 
         <div className="mb-8">
           <h2 className="font-black text-gray-800 dark:text-white text-2xl lg:text-5xl leading-tight mb-2">
-            Start Quiz 
+            Start Quiz
           </h2>
-          <p className="text-gray-400 font-semibold text-sm lg:text-lg">
-          
-          </p>
+          <p className="text-gray-400 font-semibold text-sm lg:text-lg"></p>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:gap-16 gap-8">

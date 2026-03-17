@@ -21,11 +21,7 @@ const Header = ({
             {title}
           </h1>
 
-          {subtitle && (
-            <p className="text-gray-400 text-xs lg:text-sm font-semibold">
-              {subtitle}
-            </p>
-          )}
+ 
         </div>
       </div>
 
