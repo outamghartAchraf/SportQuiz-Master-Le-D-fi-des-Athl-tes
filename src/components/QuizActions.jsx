@@ -10,6 +10,7 @@ const QuizActions = ({
 }) => {
   return (
     <div className="mt-auto grid gap-3 lg:grid-cols-[1fr_2fr] pt-4">
+
       <Button
         type="button"
         onClick={onFifty}
@@ -21,7 +22,7 @@ const QuizActions = ({
               : "bg-gray-100 text-gray-400 "
           }`}
       >
-        50/50
+        50/5
       </Button>
 
       <Button
