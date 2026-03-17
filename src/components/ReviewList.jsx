@@ -7,10 +7,10 @@ const ReviewList = ({ answers }) => (
         <i className="fa-solid fa-clipboard-list text-indigo-700" /> Voir les réponses
       </h3>
       <div className="flex flex-col gap-3 max-h-[45vh] overflow-auto pr-1">
-        {answers.map((a, idx) => (
-          <div key={idx} className={`rounded-2xl p-4 border-2 ${a.isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+        {answers.map((a, index) => (
+          <div key={index} className={`rounded-2xl p-4 border-2 ${a.isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
             <p className="font-black text-gray-800 mb-2">
-              <span className="text-gray-400 font-extrabold mr-2">Q{idx + 1}</span>{a.question}
+              <span className="text-gray-400 font-extrabold mr-2">Q{index + 1}</span>{a.question}
             </p>
             <p className="text-sm font-semibold text-gray-600">
               <i className="fa-solid fa-user text-gray-400 mr-2" /> Ta réponse:{" "}
