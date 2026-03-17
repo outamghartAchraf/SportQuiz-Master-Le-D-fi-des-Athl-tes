@@ -101,7 +101,7 @@ useEffect(() => {
     const wrong = baseOptions.filter((o) => o !== correctAnswer);
     setRemovedOptions(shuffle(wrong).slice(0, 2));
     setHintUsed(true);
-  };
+  }
 
   const onNext = () => {
     if (!isLocked) return;
