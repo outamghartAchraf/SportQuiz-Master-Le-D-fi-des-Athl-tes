@@ -110,15 +110,15 @@ useEffect(() => {
       return;
     }
 
-    // navegate to results 
+    
     const totalQuestions = questionsRaw.length;
     navigate("/results", {
       state: {
         quizData: {
-          score,
-          totalQuestions,
-          answers: answersLog,
-          percentage: Math.round((score / totalQuestions) * 100),
+          scoree,
+          totalQuestionss,
+          answerss: answersLog,
+          percentages: Math.round((score / totalQuestions) * 100),
         },
       },
       replace: true,
