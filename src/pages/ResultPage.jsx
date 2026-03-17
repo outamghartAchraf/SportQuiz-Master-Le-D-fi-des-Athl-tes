@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import ScoreCircle from "../components/ScoreCirclee";
+import ScoreCircle from "../components/ScoreCircle";
 import StatsCard from "../components/StatsCard";
-import ReviewList from "../components/ReviewList";
+import ReviewList from "../components/ReviewListt";
 import ResultButtons from "../components/ResultButtons";
 
 const ResultPage = ({ theme, onToggleTheme }) => {
