@@ -30,7 +30,7 @@ const ResultPage = ({ theme, onToggleTheme }) => {
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 mb-10 lg:mb-14">
           <StatsCard label="Bonnes réponses" count={score} color="green" icon="fa-circle-check" />
-          <StatsCard label="Mauvaises réponses" count={wrongCount} color="red" icon="fa-circle-xmark" />
+          <StatsCard label="Mauvaises réponses " count={wrongCount} color="red" icon="fa-circle-xmark" />
         </div>
 
         {showReview && <ReviewList answers={answers} />}
