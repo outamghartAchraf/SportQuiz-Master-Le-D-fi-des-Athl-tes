@@ -20,7 +20,7 @@ const QuizActions = ({
           ${
             canUseHint
               ? "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 "
-              : "bg-gray-100 text-gray-400 "
+              : "bg-gray-100 text-gray-400"
           }`}
       >
         50/50
