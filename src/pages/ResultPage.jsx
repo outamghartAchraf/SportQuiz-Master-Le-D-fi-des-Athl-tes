@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import ScoreCircle from "../components/ScoreCircle";
-import StatsCard from "../components/StatsCardd";
+import StatsCard from "../components/StatsCard";
 import ReviewList from "../components/ReviewList";
 import ResultButtons from "../components/ResultButtons";
 
@@ -29,8 +29,8 @@ const ResultPage = ({ theme, onToggleTheme }) => {
         <ScoreCircle score={score} total={totalQuestions} />
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 mb-10 lg:mb-14">
-          <StatsCard label="Bonnes réponses" count={score} color="green" icon="fa-circle-check" />
-          <StatsCard label="Mauvaises réponses " count={wrongCount} color="red" icon="fa-circle-xmark" />
+          <StatsCard label="Bonnes reponses" count={score} color="green" icon="fa-circle-check" />
+          <StatsCard label="Mauvaises reponses " count={wrongCount} color="red" icon="fa-circle-xmark" />
         </div>
 
         {showReview && <ReviewList answers={answers} />}
