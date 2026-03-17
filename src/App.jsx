@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import QuizPage from "./pages/QuizPage";
-import ResultPage from "./pages/ResultPage";
+import ResultPage from "./pages/ResultPages";
 import ErrorPage from "./pages/ErrorPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
