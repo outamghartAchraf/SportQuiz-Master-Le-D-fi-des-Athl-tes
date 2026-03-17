@@ -8,7 +8,7 @@ const ReviewList = ({ answers }) => (
       </h3>
       <div className="flex flex-col gap-3 max-h-[45vh] overflow-auto pr-1">
         {answers.map((a, index) => (
-          <div key={index} className={`rounded-2xl p-4 border-2 ${a.isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+          <div key={index} className={` rounded-2xl p-4 border-2 ${a.isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
             <p className="font-black text-gray-800 mb-2">
               <span className="text-gray-400 font-extrabold mr-2">Q{index + 1}</span>{a.question}
             </p>
