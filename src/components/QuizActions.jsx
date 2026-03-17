@@ -36,7 +36,7 @@ const QuizActions = ({
       >
         {isLastQuestion ? (
           <>
-            <span>Finish</span>
+            <span>Finis</span>
             <i className="fa-solid fa-flag-checkered" />
           </>
         ) : (
