@@ -10,7 +10,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 const THEME_KEY = "sport-quiz-theme";
 
 const App = () => {
-  const [theme, setTheme] = useState(() => localStorage.getItem(THEME_KEY) || "light")
+  const [theme, setTheme] = useState(() => localStorage.getItem(THEME_KEY) || "light");
 
   useEffect(() => {
     const root = document.documentElement;  
