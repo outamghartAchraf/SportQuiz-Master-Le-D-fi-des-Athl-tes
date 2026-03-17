@@ -109,6 +109,8 @@ useEffect(() => {
       setCurrentIndex((i) => i + 1);
       return;
     }
+
+    // navegate to results 
     const totalQuestions = questionsRaw.length;
     navigate("/results", {
       state: {
