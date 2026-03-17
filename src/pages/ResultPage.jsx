@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import ScoreCircle from "../components/ScoreCircle";
 import StatsCard from "../components/StatsCard";
-import ReviewList from "../components/ReviewListt";
+import ReviewList from "../components/ReviewList";
 import ResultButtons from "../components/ResultButtons";
 
 const ResultPage = ({ theme, onToggleTheme }) => {
@@ -11,6 +11,7 @@ const ResultPage = ({ theme, onToggleTheme }) => {
   const navigate = useNavigate();
   const quizData = location.state?.quizData;
   const [showReview, setShowReview] = useState(false);
+ 
 
   if (!quizData) {
     navigate("/", { replace: true });
