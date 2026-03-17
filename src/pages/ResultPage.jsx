@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import ScoreCircle from "../components/ScoreCircle";
+import ScoreCircle from "../components/ScoreCirclee";
 import StatsCard from "../components/StatsCard";
 import ReviewList from "../components/ReviewList";
 import ResultButtons from "../components/ResultButtons";
