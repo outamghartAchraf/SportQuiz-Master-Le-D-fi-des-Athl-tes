@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeToggle from "./ThemeTogglee";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = ({
   title = "SportQuiz",
