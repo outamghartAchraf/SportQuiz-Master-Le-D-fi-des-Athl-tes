@@ -1,17 +1,30 @@
-import { useState } from 'react'
-import QuizSettings from './components/QuizSettings'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import HomePage from './pages/HomePage'
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import HomePage from "./pages/HomePage";
+
+const THEME_KEY = "sport-quiz-theme";
+
+const App = () => {
+  const [theme, setTheme] = useState(() => localStorage.getItem(THEME_KEY) || "light");
+
+  useEffect(() => {
+    const root = document.documentElement;  
+    if (theme === "dark") root.classList.add("dark");
+    else root.classList.remove("dark");
+    localStorage.setItem(THEME_KEY, theme);
+  }, [theme]);
+
+  const toggleTheme = () => setTheme((t) => (t === "light" ? "dark" : "light"))
 
   return (
-  <HomePage/>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage theme={theme} onToggleTheme={toggleTheme} />} />
+ 
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
