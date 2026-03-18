@@ -29,9 +29,9 @@ function QuizSettings({ onStartQuiz }) {
           value={difficulty}
           onChange={(e) => setDifficulty(e.target.value)}
         >
-          <option value="easy">Facile</option>
-          <option value="medium">Moyen</option>
-          <option value="hard">Difficile</option>
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
         </select>
       </div>
 
