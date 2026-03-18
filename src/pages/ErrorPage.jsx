@@ -6,5 +6,4 @@ export const fetchQuestions = async (amount = 10, difficulty = "") => {
   const data = await res.json();
   if (data.response_code !== 0) throw new Error("No questions available");
   return data.results || [];
-
-}
+};
