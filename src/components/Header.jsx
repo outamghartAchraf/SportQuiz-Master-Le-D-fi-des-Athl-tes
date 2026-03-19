@@ -3,7 +3,6 @@ import ThemeToggle from "./ThemeToggle";
 
 const Header = ({
   title = "SportQuiz",
-  subtitle,
   theme,
   onToggleTheme,
   rightSlot = null,
