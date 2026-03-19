@@ -1,13 +1,7 @@
-import React from "react";
 import Button from "./Button";
 
 const letters = ["a", "b", "c", "d"];
-const badgeColors = [
-  "bg-yellow-400",
-  "bg-green-400",
-  "bg-violet-500",
-  "bg-green-300",
-];
+const badgeColors = ["bg-yellow-400", "bg-green-400", "bg-violet-500", "bg-green-300",];
 
 const QuestionCard = ({ questionText,  options, onSelect, isLocked, correctAnswer,  selectedAnswer,}) => {
   const rowClass = (opt) => {
