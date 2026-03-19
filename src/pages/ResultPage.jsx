@@ -13,7 +13,7 @@ const ResultPage = ({ theme, onToggleTheme }) => {
   const [showReview, setShowReview] = useState(false);
 
   if (!quizData) {
-    navigate("/", { replace: true })
+    navigate("/", { replace: true });
     return null;
   }
 
